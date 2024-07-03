@@ -1,6 +1,11 @@
 # RTIC+Embassy on stm32: Experiences and Notes
-This repo serves as a reference for future-me on how to work with RTIC on STM32.
-While the focus will be on using RTIC, there will also be examples using pure Embassy.
+This repo serves as a reference for future-me on how to work with RTIC on STM32. I made them public so that others may benefit as well.
+
+
+# Contents of the repo
+The repo will contain example projects using RTIC and Embassy. While the focus will be on using RTIC, there will also be examples using pure Embassy.
+
+Relevant tools, compiler versions etc can be brought in using nix, simply invoke `$ nix develop` in the root of this repo.
 
 # What's RTIC?
 It's a Rust framework for embedded programming. It helps the programmer with being explicit and organized about state and priorities.

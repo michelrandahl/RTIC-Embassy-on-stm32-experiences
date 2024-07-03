@@ -1,0 +1,33 @@
+{
+  "neoconf": {
+    "plugins": {
+      "rust_analyzer": {
+        "enabled": true
+      }
+    }
+  },
+  "lspconfig": {
+    "rust_analyzer": {
+      "server": {
+        "path": "rust-analyzer"
+      },
+      "cargo": {
+        "target": "thumbv7em-none-eabihf",
+        "features": ["use_defmt", "use_rtt"],
+        "loadOutDirsFromCheck": true
+      },
+      "check": {
+        "command": "clippy",
+        "targets": ["thumbv7em-none-eabihf"],
+        "allTargets": false,
+        "extraArgs": ["--target", "thumbv7em-none-eabihf"]
+      },
+      "procMacro": {
+        "enable": true
+      },
+      "diagnostics": {
+        "disabled": ["unresolved-proc-macro"]
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+[default.general]
+chip = "STM32F303ZETx"
+
+#[default.reset]
+#halt_afterwards = false
+
+[default.rtt]
+enabled = true
+
+#[default.gdb]
+#enabled = true

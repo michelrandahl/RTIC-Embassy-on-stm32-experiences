@@ -1,0 +1,9 @@
+[toolchain]
+#channel = "nightly" # or "nightly-YYYY-MM-DD" for a specific date
+channel = "1.78.0"
+profile = "default"
+components = [ "rust-src", "llvm-tools-preview", "rustfmt"]
+targets = [
+  #"thumbv6m-none-eabi" # arm-m0
+  "thumbv7em-none-eabihf" # arm-m4
+]
