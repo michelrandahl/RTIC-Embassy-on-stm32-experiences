@@ -35,7 +35,7 @@
           RUST_SRC_PATH = "${from-rust-toolchain-file}/lib/rustlib/src/rust/library";
 
           shellHook = ''
-            export PS1="[\e[1;32mNucleo-F303ZE-Rust-env\e[0m] $PS1"
+            export PS1="[\e[1;32mRTIC+Embassy-Rust-env\e[0m] $PS1"
           '';
         };
       }
